@@ -1,18 +1,7 @@
 name: Task
-description: Create a task, bug, feature, or documentation request
-title: "[TASK] "
-labels: ["task"]
+description: Create a new task
 
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ⚠️ **Update the title prefix based on Issue Type**
-        - [BUG] for bugs
-        - [FEATURE] for features
-        - [TASK] for tasks
-        - [DOC] for documentation
-
   - type: dropdown
     id: type
     attributes:
@@ -26,37 +15,12 @@ body:
       required: true
 
   - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      options:
-        - P0 (Critical)
-        - P1 (High)
-        - P2 (Medium)
-        - P3 (Low)
-    validations:
-      required: true
-
-  - type: input
-    id: service
-    attributes:
-      label: Service / Component
-      placeholder: e.g. auth-service, frontend, API
-
-  - type: input
-    id: sprint
-    attributes:
-      label: Sprint / Timeline
-      placeholder: e.g. Q1 March / Week 11
-
-  - type: dropdown
     id: environment
     attributes:
       label: Environment
       options:
-        - Production
-        - Staging
-        - Development
+        - SaaS
+        - Dev
 
   - type: textarea
     id: description
@@ -84,7 +48,13 @@ body:
       placeholder: Logs, screenshots, links, etc.
 
   - type: input
-    id: owner
+    id: creator
     attributes:
-      label: Owner
+      label: Creator
+      placeholder: Who is raising this issue?
+
+  - type: input
+    id: assignee
+    attributes:
+      label: Assignee
       placeholder: Who will work on this?
