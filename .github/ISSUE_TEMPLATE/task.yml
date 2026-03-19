@@ -47,14 +47,24 @@ body:
       label: Logs / References
       placeholder: Logs, screenshots, links, etc.
 
-  - type: input
+  - type: dropdown
     id: creator
     attributes:
-      label: Creator
-      placeholder: Who is raising this issue?
+     label: Creator
+     options:
+      - Aashit Kothari
+      - Abhijit
+      - Abhishek Soam
+      - Akash Krishna S
+      - Akhil Raj
+      - Darshana
+      - Gunjan
+      - Josh
+      - Justin Albrethsen
+      - Kunal
+      - Sanket Bambulkar
+      - Sharath
+      - Sukanya S
+      - Yash
+      - Other
 
-  - type: input
-    id: assignee
-    attributes:
-      label: Assignee
-      placeholder: Who will work on this?
