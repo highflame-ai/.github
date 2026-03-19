@@ -1,29 +1,41 @@
 name: Task
-description: Create a task, bug, or feature request
+description: Create a task, bug, feature, or documentation request
 title: "[TASK] "
 labels: ["task"]
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Update the title prefix based on Issue Type**
+        - [BUG] for bugs
+        - [FEATURE] for features
+        - [TASK] for tasks
+        - [DOC] for documentation
+
   - type: dropdown
     id: type
     attributes:
-      label: Type
+      label: Issue Type
       options:
         - Bug
         - Feature
         - Task
+        - Documentation
     validations:
       required: true
 
   - type: dropdown
-    id: severity
+    id: priority
     attributes:
-      label: Severity
+      label: Priority
       options:
-        - Critical
-        - High
-        - Medium
-        - Low
+        - P0 (Critical)
+        - P1 (High)
+        - P2 (Medium)
+        - P3 (Low)
+    validations:
+      required: true
 
   - type: input
     id: service
@@ -31,54 +43,48 @@ body:
       label: Service / Component
       placeholder: e.g. auth-service, frontend, API
 
+  - type: input
+    id: sprint
+    attributes:
+      label: Sprint / Timeline
+      placeholder: e.g. Q1 March / Week 11
+
   - type: dropdown
     id: environment
     attributes:
       label: Environment
       options:
-        - Dev
-        - SaaS
+        - Production
+        - Staging
+        - Development
 
   - type: textarea
     id: description
     attributes:
       label: Description
-      placeholder: Describe the issue / task
+      placeholder: Clearly describe the task or issue
     validations:
       required: true
 
   - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      placeholder: What defines completion?
+
+  - type: textarea
     id: steps
     attributes:
-      label: Steps (if applicable)
-      placeholder: Steps to reproduce (for bugs)
-
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected Outcome
-
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual Outcome
+      label: Steps to Reproduce (for bugs)
 
   - type: textarea
     id: logs
     attributes:
-      label: Logs / Errors
+      label: Logs / References
+      placeholder: Logs, screenshots, links, etc.
 
   - type: input
     id: owner
     attributes:
       label: Owner
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      options:
-        - Critical
-        - High
-        - Medium
-        - Low
+      placeholder: Who will work on this?
