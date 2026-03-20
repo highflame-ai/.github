@@ -14,14 +14,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: environment
-    attributes:
-      label: Environment
-      options:
-        - SaaS
-        - Dev
-
   - type: textarea
     id: description
     attributes:
@@ -46,25 +38,3 @@ body:
     attributes:
       label: Logs / References
       placeholder: Logs, screenshots, links, etc.
-
-  - type: dropdown
-    id: creator
-    attributes:
-     label: Creator
-     options:
-      - Aashit Kothari
-      - Abhijit
-      - Abhishek Soam
-      - Akash Krishna S
-      - Akhil Raj
-      - Darshana
-      - Gunjan
-      - Josh
-      - Justin Albrethsen
-      - Kunal
-      - Sanket Bambulkar
-      - Sharath
-      - Sukanya S
-      - Yash
-      - Other
-
