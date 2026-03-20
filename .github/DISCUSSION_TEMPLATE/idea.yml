@@ -1,21 +1,21 @@
 title: Idea / Proposal
-category: Ideas
 labels: ["idea"]
 
 body:
   - type: textarea
     attributes:
       label: Describe the idea
-      description: Explain the feature or improvement clearly
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: Why is this needed?
-      description: What problem does it solve?
+      label: Problem Statement
 
   - type: textarea
     attributes:
-      label: Additional information
-      description: Links, references, or context
+      label: Proposed Solution
+
+  - type: textarea
+    attributes:
+      label: Impact
