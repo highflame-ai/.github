@@ -1,11 +1,10 @@
-title: Question
+title: Support / Question
 labels: ["question"]
 
 body:
   - type: textarea
     attributes:
-      label: Describe your question
-      description: Please describe the question clearly. Include errors, behavior, or steps.
+      label: Describe your issue / question
     validations:
       required: true
 
@@ -14,23 +13,17 @@ body:
       label: Environment
       options:
         - SaaS
-        - Self-Hosted
+        - Dev
     validations:
       required: true
-
-  - type: input
-    attributes:
-      label: Version (if Self-Hosted)
-      description: Mention version if applicable
 
   - type: textarea
     attributes:
       label: Additional Details
-      description: Logs, screenshots, or extra context
 
   - type: checkboxes
     attributes:
-      label: Pre-Submission Checklist
+      label: Checklist
       options:
-        - label: I have checked existing issues and discussions
+        - label: I have checked existing issues/discussions
           required: true
