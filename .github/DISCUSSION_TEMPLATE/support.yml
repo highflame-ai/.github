@@ -8,15 +8,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    attributes:
-      label: Environment
-      options:
-        - SaaS
-        - Dev
-    validations:
-      required: true
-
   - type: textarea
     attributes:
       label: Additional Details
