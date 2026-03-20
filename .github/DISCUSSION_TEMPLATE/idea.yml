@@ -1,0 +1,20 @@
+title: Idea / Proposal
+labels: ["idea"]
+
+body:
+  - type: textarea
+    attributes:
+      label: Describe the idea
+      description: Explain the feature or improvement clearly
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Why is this needed?
+      description: What problem does it solve?
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Links, references, or context
