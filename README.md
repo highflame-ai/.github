@@ -2,8 +2,6 @@
 
 This repository contains **standardized templates and workflows** used across all repositories in the organization.
 
----
-
 ## 🎯 Purpose
 
 To ensure consistency, quality, and streamlined collaboration across all projects by providing:
@@ -11,8 +9,6 @@ To ensure consistency, quality, and streamlined collaboration across all project
 * ✅ Issue Templates
 * ✅ Pull Request Templates
 * ✅ Discussion Templates
-
----
 
 ## 🌍 Org-Level Behavior
 
@@ -27,7 +23,7 @@ Standardized issue forms ensure all required information is captured:
 * Description
 * Logs / Steps
 
----
+👉 This ensures clear communication, better collaboration, and faster issue resolution.
 
 ## 🔀 Pull Request Template
 
@@ -41,8 +37,6 @@ All PRs follow a structured format including:
 * Checklist
 
 👉 This improves review quality and consistency.
-
----
 
 ## 💬 Discussion Templates
 
@@ -63,7 +57,5 @@ To use them:
 
 1. Copy `.github/DISCUSSION_TEMPLATE/` into target repo
 2. Ensure discussion categories exist (e.g., `Ideas`, `Support`)
-
----
 
 > 💡 A well-structured template system leads to better collaboration, faster debugging, and higher code quality.
