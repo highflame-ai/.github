@@ -1,17 +1,8 @@
 ## Summary
-<!-- What does this PR do? -->
-<!-- Example: Fix login API failure / Add user filters -->
-
----
-
-## Related Issue
-Closes #
 
 ---
 
 ## Type of change
-
-<!-- Please delete bullets that are not relevant. -->
 
 - [ ] Bug fix (non-breaking change which fixes an issue)
 - [ ] Chore (refactoring code, technical debt, workflow improvements)
@@ -20,22 +11,9 @@ Closes #
 - [ ] Refactor (does not change functionality, e.g. code style improvements, linting)
 - [ ] This change requires a documentation update
 
-## Mandatory Tasks
-
-- [ ] Make sure you have self-reviewed the code. A decent size PR without self-review might be rejected.
-
----
-
-## Changes
-<!-- List key changes -->
-- 
-- 
-- 
-
 ---
 
 ## Testing
-<!-- How was this tested? -->
 - [ ] Manually tested
 - [ ] Unit tests added/updated
 - [ ] No tests required
@@ -43,7 +21,6 @@ Closes #
 ---
 
 ## Impact / Risks
-<!-- Any risks, breaking changes, or dependencies? -->
 
 ---
 
@@ -51,8 +28,3 @@ Closes #
 
 ---
 
-## Checklist
--  Code reviewed by self
--  Tests passing
--  No new warnings/errors
--  Documentation updated (if needed)
